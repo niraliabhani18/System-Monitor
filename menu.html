@@ -1,0 +1,145 @@
+ps: cmd: keyword not found
+df: illegal option -- -
+usage: df [-b | -H | -h | -k | -m | -g | -P] [-ailn] [-T type] [-t] [filesystem ...]
+/Users/niraliabhani/IdeaProjects/System Monitor/mySysMonitor.sh: line 77: lsusb: command not found
+/Users/niraliabhani/IdeaProjects/System Monitor/mySysMonitor.sh: line 85: ip: command not found
+  <html>
+  <head><meta http-equiv="refresh" content="5"><title>Linux System Change Logger Script for Niralis-MacBook-Air.local</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+localStorage.setItem('activeTab', $(e.target).attr('href'));
+});
+var activeTab = localStorage.getItem('activeTab');
+if(activeTab){
+$('#myTab a[href="' + activeTab + '"]').tab('show');
+}
+});
+</script>
+  </head>
+
+ <body>
+
+
+<div class="container mt-3">
+  <h2>Linux System Change Logger Script for Niralis-MacBook-Air.local</h2> <p>Updated on Tue Feb 11 19:17:41 GMT 2020 by niraliabhani</p>
+  <br>
+  <!-- Nav tabs -->
+  <ul id="myTab" class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#home">Current Processes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Current Users</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Disk Space</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu3">Home Space</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu4">Key Directory Space</a>
+    </li>
+
+
+<li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu5">Devices</a>
+    </li><li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu6">Network Interfaces</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Current Processes running</h3>
+      <pre>
+USER               PID  PPID     STIME      TIME
+root                 1     0   0:09.19   0:13.79
+root               107     1   0:00.28   0:00.46
+root               108     1   0:00.82   0:01.59
+root               110     1   0:01.46   0:04.83
+root               112     1   0:00.11   0:00.16
+root               113     1   0:03.87   0:06.77
+root               114     1   0:03.87   0:06.74
+root               115     1   0:00.11   0:00.18
+root               118     1   0:00.76   0:01.01
+root               119     1   0:00.76   0:01.21
+root               120     1   0:00.01   0:00.03
+root               121     1   0:03.44   0:05.76
+root               125     1   0:02.09   0:04.43
+root               126     1   0:00.03   0:00.04
+root               129     1   0:00.18   0:00.33
+root               133     1   0:06.90   0:13.67
+_iconservices      134     1   0:00.03   0:00.06
+root               135     1   0:01.00   0:02.99
+root               138     1   0:00.16   0:00.70
+root               141     1   0:01.97   0:05.18
+root               142     1   0:00.33   0:01.14
+root               143     1   0:00.02   0:00.03
+root               144     1   0:03.11   0:07.26
+_timed             145     1   0:00.07   0:00.11
+_usbmuxd           146     1   0:00.04   0:00.05
+root               147     1   0:00.72   0:04.24
+root               148     1   0:00.01   0:00.01
+_locationd         150     1   0:01.06   0:02.86
+root               153     1   0:00.01   0:00.02
+</pre>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Current Users Logged In</h3>
+      <pre>
+niraliabhani console  Feb 11 18:11 
+</pre>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Drive Space</h3>
+      <pre>
+Filesystem      Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1s5   466Gi   10Gi  243Gi     5%  484184 4881968696    0%   /
+devfs          192Ki  192Ki    0Bi   100%     665          0  100%   /dev
+/dev/disk1s1   466Gi  210Gi  243Gi    47%  996711 4881456169    0%   /System/Volumes/Data
+/dev/disk1s4   466Gi  1.0Gi  243Gi     1%       1 4882452879    0%   /private/var/vm
+map auto_home    0Bi    0Bi    0Bi   100%       0          0  100%   /System/Volumes/Data/home
+</pre>
+    </div>
+<div id="menu3" class="container tab-pane fade"><br>
+      <h3>Home Directory Memory Space Usage</h3>
+      <pre>
+Bytes Directory
+</pre>
+    </div>
+<div id="menu4" class="container tab-pane fade"><br>
+      <h3>Key Directory Memory Space Usage</h3>
+      Downloads '\n' Directory:
+5.7G	/Users/niraliabhani/Downloads
+  ;Desktop Directory:
+ 14G	/Users/niraliabhani/Desktop
+  ;Music Directory:
+204M	/Users/niraliabhani/Music
+    </div>
+<div id="menu5" class="container tab-pane fade"><br>
+      <h3>Devices Plugged In</h3>
+      <pre>
+</pre>
+    </div>
+<div id="menu6" class="container tab-pane fade"><br>
+      <h3>Network Interfaces and their States</h3>
+      <pre>
+</pre>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+  </html>
